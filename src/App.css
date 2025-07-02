@@ -1,0 +1,174 @@
+.App {
+  height: 110vh;
+  color: white;
+  background-color: #020230;
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background: url("https://i.pinimg.com/originals/f1/17/23/f11723f9894882a76ce18a626cc5ad69.jpg")
+    center;
+  height: 100%;
+  background-size: cover;
+}
+
+.quiz {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+
+
+.question {
+  width: 80%;
+  background: linear-gradient(#100241, black);
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  border: 2px solid white;
+  font-size: 1.8rem;
+  font-weight: bold;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.answers {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.answer {
+  width: 40%;
+  padding: 10px;
+  margin: 0 10px 20px 10px;
+  text-align: center;
+  background: linear-gradient(#0e0124, #22074d);
+  border: 1px solid white;
+  border-radius: 65px;
+  font-weight: 300;
+  font-size: 20px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.answer:hover {
+  background: #4caf50;
+  color: white;
+  transform: scale(1.05);
+}
+
+.answer.active {
+  background: #ff9800;
+  color: white;
+}
+
+.answer.correct {
+  background: #4caf50;
+  color: white;
+}
+
+.answer.wrong {
+  background: #f44336;
+  color: white;
+}
+
+.answer.highlight {
+  background-color: #4caf50; /* Green background for the correct answer */
+  color: white;
+  font-weight: bold;
+  border: 5px solid #4caf50;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.item {
+  display: inline-block;
+  align-items: center;
+  padding: 5px;
+  border-radius: 5px;
+  width: auto;
+}
+
+.item.active {
+  background-color: teal;
+}
+
+.money {
+  background-color: #020230;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.money-list {
+  padding: 20px;
+  list-style: none;
+  width: 100%;
+}
+
+.amount {
+  font-size: 18px;
+  font-weight: 300;
+  text-align: center;
+}
+
+.timer {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 5px solid white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 10px;
+  left: 80px;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.earned {
+  position: relative;
+  margin: auto;
+  margin-top: 150px;
+  color: #fff;
+  font-weight: 600;
+}
+
+.audience-poll {
+  margin-top: 20px;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 15px;
+  border-radius: 10px;
+  color: white;
+  text-align: center;
+}
+
+.audience-poll ul {
+  list-style: none;
+  padding: 0;
+}
+
+.audience-poll li {
+  margin: 5px 0;
+  font-size: 1.2rem;
+}
