@@ -5,7 +5,7 @@ An interactive quiz game inspired by the popular TV show *Kaun Banega Crorepati 
 ## Features
 
 - **Realistic Gameplay**: Inspired by KBC with lifelines like 50:50, Audience Poll, Expert Advice, and Flip Question.
-- ⚛**React + Hooks**: Smooth state management using React functional components and hooks.
+- **React + Hooks**: Smooth state management using React functional components and hooks.
 - **Audio Feedback**: Integrated sound effects to enhance interactivity and realism.
 - **MDB React UI Kit**: Clean and responsive design using Material Design principles.
 - **Randomized Logic**: Dynamic question ordering for replayability.
